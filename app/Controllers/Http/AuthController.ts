@@ -10,4 +10,9 @@ export default class AuthController {
       return response.unauthorized('Invalid credentials')
     }
   }
+  
+  public async logout({ auth, response }: HttpContextContract) {
+      await auth.use('api').logout()
+      return response.send({ code: 200, message: 'Logged out'})
+  }
 }
