@@ -41,7 +41,7 @@ export default class ProductsController {
   
       return {
         code: 200,
-        message: 'products deleted successfully'
+        message: 'product deleted successfully'
       }
     }
   }
