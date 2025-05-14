@@ -13,7 +13,7 @@ export default class UsersController {
     const user = await User.create({
       name,
       email,
-      password
+      password,
     })
 
     return user
@@ -43,7 +43,7 @@ export default class UsersController {
 
     return {
       code: 200,
-      message: 'User deleted successfully'
+      message: 'User deleted successfully',
     }
   }
 }
